@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #4B5563;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 14vh;
+  padding: 0 2rem;
+  border-bottom: 2px solid #B4AEAE;
+}
+header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #1F2937;
+}
+
+.navHeader {
+  width: 40%;
+}
+.navHeader ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navHeader li {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navHeader li a {
+  color: #4B5563;
+  font-size: 1.4rem;
+}
+.navHeader .btnVerdeHeader {
+  background-color: #21C05C;
+  height: 7vh;
+  width: 28%;
+  border-radius: 10px;
+}
+.navHeader .btnVerdeHeader a {
+  color: #fff;
+}
+
+.primeiraSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+}
+.primeiraSection section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  height: 45vh;
+  width: 50%;
+}
+.primeiraSection section h2 {
+  font-size: 3.75rem;
+  width: 80%;
+  color: #1F2937;
+}
+.primeiraSection section p {
+  width: 65%;
+}
+
+.boxBtnsPrimeiraSection {
+  height: 10vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxBtnsPrimeiraSection button {
+  width: 45%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.125rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.boxBtnsPrimeiraSection img {
+  width: 15%;
+}
+
+.btnVerde {
+  background-color: #16A34A;
+  color: #fff;
+  border: none;
+}
+
+.btnBranco {
+  background-color: transparent;
+  border: 1px solid #2563EB;
+  color: #2563EB;
+}/*# sourceMappingURL=style.css.map */
