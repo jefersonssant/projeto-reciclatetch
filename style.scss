@@ -38,6 +38,7 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 8vh;
     }
 
     li {
@@ -57,6 +58,7 @@ header {
         height: 7vh;
         width: 28%;
         border-radius: 10px;
+        min-width: 185px;
 
         a {
             color: #fff;
@@ -68,15 +70,18 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 50vh;
+    height: auto;
+    padding: 20px 0;
+    margin-bottom: 20px;
     
     section {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: start;
-        height: 45vh;
+        height: auto;
         width: 50%;
+        padding: 20px 0;
 
         h2 {
             font-size: 3.75rem;
@@ -96,9 +101,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 
     button {
         width: 45%;
+        min-width: 172px;
         height: 8vh;
         display: flex;
         justify-content: space-evenly;
@@ -123,4 +130,157 @@ header {
     background-color: transparent;
     border: 1px solid #2563EB;
     color: #2563EB;
+}
+
+/* RESPONSIVIDADE
+MAX 200px -> smartwatch
+de 201px a 500px -> celular
+de 501px a 900px -> tablet
+de 901 a 1500px -> notebook
+
+@media (max-width: 1410px) { 
+
+    header {
+
+    }
+
+}
+
+*/
+
+// Responsividade pontuais para o header
+
+@media (max-width: 1410px) {
+    .navHeader {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem 2rem;
+
+        div {
+            width: 50%;
+        }
+    }
+    .navHeader {
+        width: 95%;
+    }
+}
+
+//Responsivo tablet
+@media (min-width: 501px) and (max-width: 900px) {
+    .navHeader {
+        ul {
+            li {
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    .primeiraSection {
+        flex-direction: column;
+
+        section {
+            width: 96%;
+            align-items: center;
+            text-align: center;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+            h2, p {
+                width: 100%;
+            }
+        }
+    }
+
+    .boxBtnsPrimeiraSection {
+        width: 70%;
+
+        button {
+            min-width: 160px;
+            font-size: 1rem;
+        }
+    }
+}
+
+
+// Responsivo celular
+
+@media (min-width: 201px) and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 17vh;
+        padding: 0;
+
+        div {
+            width: 70%;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .navHeader {
+        width: 95%;
+
+        ul {
+            flex-wrap: wrap;
+            align-content: center;
+
+            li {
+                a {
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .primeiraSection {
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+
+        img {
+            width: 50vh;
+        }
+
+        section {
+            text-align: center;
+            width: 96%;
+            align-items: center;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h2, p {
+                width: 100%;
+            }
+        }
+    }
+
+    .boxBtnsPrimeiraSection {
+            width: 100%;
+
+            button {
+                width: 45%;
+                min-width: 0;
+                font-size: 1rem;
+
+                img {
+                    width: 10%;
+                }
+            }
+            
+        }
 }

@@ -35,6 +35,7 @@ header h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 8vh;
 }
 .navHeader li {
   height: 5vh;
@@ -51,6 +52,7 @@ header h1 {
   height: 7vh;
   width: 28%;
   border-radius: 10px;
+  min-width: 185px;
 }
 .navHeader .btnVerdeHeader a {
   color: #fff;
@@ -60,15 +62,18 @@ header h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
+  height: auto;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
 .primeiraSection section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
-  height: 45vh;
+  height: auto;
   width: 50%;
+  padding: 20px 0;
 }
 .primeiraSection section h2 {
   font-size: 3.75rem;
@@ -85,9 +90,11 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .boxBtnsPrimeiraSection button {
   width: 45%;
+  min-width: 172px;
   height: 8vh;
   display: flex;
   justify-content: space-evenly;
@@ -110,4 +117,119 @@ header h1 {
   background-color: transparent;
   border: 1px solid #2563EB;
   color: #2563EB;
+}
+
+/* RESPONSIVIDADE
+MAX 200px -> smartwatch
+de 201px a 500px -> celular
+de 501px a 900px -> tablet
+de 901 a 1500px -> notebook
+
+@media (max-width: 1410px) { 
+
+    header {
+
+    }
+
+}
+
+*/
+@media (max-width: 1410px) {
+  .navHeader {
+    width: 65%;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem 2rem;
+  }
+  header div {
+    width: 50%;
+  }
+  .navHeader {
+    width: 95%;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .navHeader ul li a {
+    font-size: 0.9rem;
+  }
+  .primeiraSection {
+    flex-direction: column;
+  }
+  .primeiraSection section {
+    width: 96%;
+    align-items: center;
+    text-align: center;
+  }
+  .primeiraSection section h2 {
+    font-size: 2.5rem;
+  }
+  .primeiraSection section h2, .primeiraSection section p {
+    width: 100%;
+  }
+  .boxBtnsPrimeiraSection {
+    width: 70%;
+  }
+  .boxBtnsPrimeiraSection button {
+    min-width: 160px;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 17vh;
+    padding: 0;
+  }
+  header div {
+    width: 70%;
+  }
+  header div h1 {
+    font-size: 1.5rem;
+  }
+  .navHeader {
+    width: 95%;
+  }
+  .navHeader ul {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .navHeader ul li a {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .primeiraSection {
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+  }
+  .primeiraSection img {
+    width: 50vh;
+  }
+  .primeiraSection section {
+    text-align: center;
+    width: 96%;
+    align-items: center;
+  }
+  .primeiraSection section h2 {
+    font-size: 1.5rem;
+  }
+  .primeiraSection section h2, .primeiraSection section p {
+    width: 100%;
+  }
+  .boxBtnsPrimeiraSection {
+    width: 100%;
+  }
+  .boxBtnsPrimeiraSection button {
+    width: 45%;
+    min-width: 0;
+    font-size: 1rem;
+  }
+  .boxBtnsPrimeiraSection button img {
+    width: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */
