@@ -119,6 +119,64 @@ header h1 {
   color: #2563EB;
 }
 
+.dadosNumericos {
+  background-color: #F3F5F8;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dadosNumericos div {
+  text-align: center;
+}
+.dadosNumericos div h2 {
+  font-size: 2.5rem;
+  color: #16A34A;
+}
+
+.comoFunciona {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+.comoFunciona h2, .comoFunciona p {
+  width: 75%;
+  color: #1F2937;
+}
+.comoFunciona section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.comoFunciona section article {
+  background-color: #F3F5F8;
+  border-radius: 10px;
+  height: 50vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.comoFunciona section article div, .comoFunciona section article p {
+  width: 90%;
+}
+.comoFunciona .caixaFlexivel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comoFunciona .caixaFlexivel img {
+  width: 8%;
+}
+.comoFunciona .caixaFlexivel div, .comoFunciona .caixaFlexivel h2 {
+  width: 90%;
+}
+.comoFunciona .tituloParaDoadores {
+  color: #16A34A;
+}
+
 /* RESPONSIVIDADE
 MAX 200px -> smartwatch
 de 201px a 500px -> celular
@@ -231,5 +289,8 @@ de 901 a 1500px -> notebook
   }
   .boxBtnsPrimeiraSection button img {
     width: 10%;
+  }
+  .dadosNumericos div h2 {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
