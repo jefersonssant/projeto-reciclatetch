@@ -152,9 +152,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     height: 70vh;
 
-    h2, p {
+    h2, h3 {
         width: 75%;
         color: #1F2937;
     }
@@ -197,6 +198,75 @@ header {
     .tituloParaDoadores {
         color: #16A34A;
     }
+    .tituloParaAquirentes {
+        color: #2563EB;
+        font-weight: 400;
+    }
+}
+
+.produtosDisponiveis {
+    background-color: #F3F5F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh;
+    h2 {
+        color: #1F2937;
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        width: 80%;
+        color: #4B5563;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-evenly;
+        height: 50vh;
+        width: 100%;
+
+        article {
+            border: 2px solid #16A34A;
+            border-radius: 10px;
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2rem;
+            text-align: center;
+            height: 50vh;
+
+            img {
+                height: 25vh;
+                width: 100%;
+            }
+
+            h3 {
+                color: #09090B;
+                font-weight: 400;
+            }
+
+            p {
+                width: 80%;
+                color: #4B5563;
+            }
+
+            button {
+                background-color: #21C05C;
+                color: #fff;
+                width: 45%;
+                height: 40px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 /* RESPONSIVIDADE
@@ -235,6 +305,23 @@ de 901 a 1500px -> notebook
     }
     .navHeader {
         width: 95%;
+    }
+
+    .comoFunciona {
+        height: 120vh;
+        padding: 20px 0px;
+        text-align: center;
+
+        section {
+            flex-direction: column;
+            align-items: center;
+            text-align: start;
+            row-gap: 20px;
+
+            article {
+                width: 80%;
+            }
+        }
     }
 }
 
@@ -355,6 +442,20 @@ de 901 a 1500px -> notebook
         div {
             h2 {
                 font-size: 1.5rem;
+            }
+        }
+    }
+
+    .comoFunciona {
+        height: 130vh;
+
+        section {
+            height: 120vh;
+
+            article {
+                div {
+                    font-size: 10px;
+                }
             }
         }
     }
